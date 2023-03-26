@@ -14,13 +14,13 @@ import {
   const Project = ({title, description, tags, img}) => {
     return <Card sx={{maxWidth: 375, margin: "1rem"}} >
       <CardActionArea>
-        <CardMedia component="img" image={img} />
+        <CardMedia component="img" image={img} style={{height:"195px"}} />
         <CardContent>
 
-        <Typography variant="h5" component="div" >
+        <Typography variant="h6" component="div" >
             {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary" >
+        <Typography variant="body2" color="text.secondary" sx={{height:"45px", margin:"15px 0px"}} >
             {description}
         </Typography>
         </CardContent>
@@ -35,8 +35,17 @@ import {
               Vistar Demo
             </Button>
           </Box>
-      </CardActions>
 
+          <Box sx={{width:"100%", display:"flex", justifyContent: "center", flexWrap:"wrap", gap:"irem", mb:2 }}>
+          {
+            tags.map((tag) => (
+              <Chip sx={{mx:1}} label={tag} key={tag} variant="outlined" />
+            ))
+          }
+
+          </Box>
+
+      </CardActions>
      </Card>;
   };
   
