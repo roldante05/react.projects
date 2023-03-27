@@ -26,7 +26,7 @@ import {
         </CardContent>
       </CardActionArea>
 
-      <CardActions sx={{displat:"flex", flexDirection:"column"}} >
+      <CardActions sx={{display:"flex", flexDirection:"column"}} >
           <Box sx={{width:"100%", display:"flex",justifyContent:"space-around", mx:"auto",mb:3}} >
             <Button size="small" style={{backgroundColor:"rgba(0,199,255,255)"}} variant="contained" >
               Ver Código
