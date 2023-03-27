@@ -2,9 +2,10 @@ import { Box, Typography } from "@mui/material";
 import { projects } from "../resources/projects";
 import Project from "./Project";
 import Stack from "./Stack";
+import Work from "./Work";
 
 
-const Experience = () => {
+const Projects = () => {
   return (
   <Box sx={{maxWidth: "1300px", mx:"auto", my: 12}} id="experience" >
     <Typography variant="h4" sx={{color:"white", textAlign:"center", mb:2}} >
@@ -24,4 +25,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Projects;
