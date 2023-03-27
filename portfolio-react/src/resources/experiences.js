@@ -12,7 +12,7 @@ export const experiences = [
         title: "FREELANCE",
         nombre: "Programación Web",
         fecha:"Mayo - Junio 2022",
-        descripcion: ["Desarrollo de paginas web", "Implementando tecnologías como HTML, CSS, Bootstrap y PHP"],
+        descripcion: ["Desarrollo de paginas web", "Stack: HTML, CSS, Bootstrap, PHP"],
         imagen: "https://portfolio-dante.vercel.app/static/media/web.d4039cd6bf2cf1c8026f.png"
     },
 ];
