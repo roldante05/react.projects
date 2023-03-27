@@ -35,7 +35,7 @@ textAlign:"center",
 
 }));
 
-  return (<Box sx={{mt: 8, mb: 12, p:2, maxWidth:"1200px", mx:"auto"}} id="home" >
+  return (<Box sx={{mt: 8, mb: 12, p:2, maxWidth:"1200px", mx:"auto"}}  >
     <Typography sx={{color: "white", textAlign:"center", md:2}} variant="h4" >
         Hola, Me llamo Dante !
     </Typography>

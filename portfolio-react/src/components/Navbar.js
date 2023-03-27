@@ -31,7 +31,7 @@ const Navbar = () => {
             },
     }));
 
-  return <Box sx={{flexGrow: 1, px:5, py:2, maxWidth: "1200px", mx: "auto"}} >
+  return <Box sx={{flexGrow: 1, px:5, py:2, maxWidth: "1200px", mx: "auto"}} id="home" >
             <AppBar position="static" style = {{background: "transparent", boxShadow:"none"}} >
               <CustomToolbar>
                 <Box sx={{display:"flex", justifyContent:"center", alignItems:"center", gap:"1rem"}}>
@@ -42,14 +42,17 @@ const Navbar = () => {
                 </Box>
 
                 <CustomBox  >
-                <Link to="inicio" className="link" smooth >
+                <Link to="home" className="link" smooth >
                     Inicio
                 </Link>
-                <Link to="experiencia" className="link" smooth >
-                    Experiencia
+                <Link to="experience" className="link" smooth >
+                    Proyectos
                 </Link>
-                <Link to="sobre-mi" className="link" smooth >
+                <Link to="about" className="link" smooth >
                     Sobre mi
+                </Link>
+                <Link to="skills" className="link" smooth >
+                Tecnologías
                 </Link>
                 </CustomBox>
 
