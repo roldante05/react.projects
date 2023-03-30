@@ -8,7 +8,7 @@ import Work from "./Work";
 const Projects = () => {
   return (
   <Box sx={{maxWidth: "1300px", mx:"auto", my: 12}} id="experience" >
-    <Typography variant="h4" sx={{color:"white", textAlign:"center", mb:2}} >
+    <Typography className="title-project" variant="h4" sx={{color:"white", textAlign:"center", mb:2}} >
     Los siguientes 
     <span style={{color:"rgba(0,199,255,255)"}} > proyectos </span>
      que he realizado:

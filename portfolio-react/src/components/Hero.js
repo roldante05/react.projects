@@ -36,12 +36,15 @@ textAlign:"center",
 }));
 
   return (<Box sx={{mt: 8, mb: 12, p:2, maxWidth:"1200px", mx:"auto"}}  >
+  <div>
+
     <Typography sx={{color: "white", textAlign:"center", md:2}} variant="h4" >
         Hola, Me llamo Dante !
     </Typography>
     <CustomTitle variant="h3" >
         Soy <span style={{color:"rgba(0, 199,255,255)"}}  >Desarrollador</span> {" "} Web <span style={{color:"rgba(0, 199,255,255)"}} >Trainee</span> 
     </CustomTitle>
+  </div>
     <Box sx={{display:"flex", flexDirection: "column", alignItems:"center", justifyContent:"center", gap:"1rem"}} >
     <Box component="img" sx={{ width:190, mt: 4, mb: 4}} src={reactImg} />
 

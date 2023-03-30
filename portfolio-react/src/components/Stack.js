@@ -27,7 +27,7 @@ const Stack = () => {
     }));
 
     return(
-        <CustomBox sx={{my: 5, padding: 0}} >
+        <CustomBox sx={{my: 2, py: 4}} >
             {/* <Box sx={{flex: 1}} >
                 
             </Box> */}
