@@ -4,105 +4,101 @@ import { icons } from "../resources/icons";
 import Icon from "./Icon";
 
 const Stack = () => {
-    const CustomBox = styled(Box)(({theme}) => ({
-        maxWidth:"1300px",
-        display:"flex",
-        justifyContent:"space-between",
-        mx:"auto",
-        [
-            theme.breakpoints.down("md")]: {
-                flexDirection:"column"
-            },
-    }));
-    const StackBox = styled(Box)(({theme}) => ({
-        marginLeft:"1.5rem",
-        flex:1,
-        display:"flex",
-        justifyContent:"space-around",
-        [
-            theme.breakpoints.down("md")]: {
-                marginLeft:0,
-                marginTop:"3rem"
-            },
-    }));
+  const CustomBox = styled(Box)(({ theme }) => ({
+    maxWidth: "1300px",
+    display: "flex",
+    justifyContent: "space-between",
+    mx: "auto",
+    [theme.breakpoints.down("md")]: {
+      flexDirection: "column",
+    },
+  }));
+  const StackBox = styled(Box)(({ theme }) => ({
+    marginLeft: "1.5rem",
+    flex: 1,
+    display: "flex",
+    justifyContent: "space-around",
+    [theme.breakpoints.down("md")]: {
+      marginLeft: 0,
+      marginTop: "3rem",
+    },
+  }));
 
-    return(
-        <CustomBox sx={{my: 2, py: 4}} >
-            {/* <Box sx={{flex: 1}} >
+  return (
+    <CustomBox sx={{ my: 2, py: 4 }}>
+      {/* <Box sx={{flex: 1}} >
                 
             </Box> */}
-            <StackBox>
-            <Box sx={{diplay: "flex", flexDirection:"column", alignItems:"center"}} >
-                {
-                    icons.map((icon, i) =>{
-                        if(i < 2){
-                            return <Icon key={icon.id} name={icon.name} src={icon.src} />
-                        } else {
-                            return "";
-                        }
-                    } )
-                }
-            </Box>
-            <Box sx={{diplay: "flex", flexDirection:"column", alignItems:"center"}} >
-                {
-                    icons.map((icon, i) =>{
-                        if(i >= 2 && i < 4){
-                            return <Icon key={icon.id} name={icon.name} src={icon.src} />
-                        } else {
-                            return "";
-                        }
-                    } )
-                }
-            </Box>
-            <Box sx={{diplay: "flex", flexDirection:"column", alignItems:"center"}} >
-                {
-                    icons.map((icon, i) =>{
-                        if(i >= 4 && i < 6){
-                            return <Icon key={icon.id} name={icon.name} src={icon.src} />
-                        } else {
-                            return "";
-                        }
-                    } )
-                }
-            </Box>
-            <Box sx={{diplay: "flex", flexDirection:"column", alignItems:"center"}} >
-                {
-                    icons.map((icon, i) =>{
-                        if(i >= 6 && i < 8){
-                            return <Icon key={icon.id} name={icon.name} src={icon.src} />
-                        } else {
-                            return "";
-                        }
-                    } )
-                }
-            </Box>
-            <Box sx={{diplay: "flex", flexDirection:"column", alignItems:"center"}} >
-                {
-                    icons.map((icon, i) =>{
-                        if(i >= 8 && i < 10){
-                            return <Icon key={icon.id} name={icon.name} src={icon.src} />
-                        } else {
-                            return "";
-                        }
-                    } )
-                }
-            </Box>
-            <Box sx={{diplay: "flex", flexDirection:"column", alignItems:"center"}} >
-                {
-                    icons.map((icon, i) =>{
-                        if(i >= 10){
-                            return <Icon key={icon.id} name={icon.name} src={icon.src} />
-                        } else {
-                            return "";
-                        }
-                    } )
-                }
-            </Box>
-           
-            </StackBox>
-        </CustomBox>
-    )
-
-}
+      <StackBox>
+        <Box
+          sx={{ diplay: "flex", flexDirection: "column", alignItems: "center" }}
+        >
+          {icons.map((icon, i) => {
+            if (i < 2) {
+              return <Icon key={icon.id} name={icon.name} src={icon.src} />;
+            } else {
+              return "";
+            }
+          })}
+        </Box>
+        <Box
+          sx={{ diplay: "flex", flexDirection: "column", alignItems: "center" }}
+        >
+          {icons.map((icon, i) => {
+            if (i >= 2 && i < 4) {
+              return <Icon key={icon.id} name={icon.name} src={icon.src} />;
+            } else {
+              return "";
+            }
+          })}
+        </Box>
+        <Box
+          sx={{ diplay: "flex", flexDirection: "column", alignItems: "center" }}
+        >
+          {icons.map((icon, i) => {
+            if (i >= 4 && i < 6) {
+              return <Icon key={icon.id} name={icon.name} src={icon.src} />;
+            } else {
+              return "";
+            }
+          })}
+        </Box>
+        <Box
+          sx={{ diplay: "flex", flexDirection: "column", alignItems: "center" }}
+        >
+          {icons.map((icon, i) => {
+            if (i >= 6 && i < 8) {
+              return <Icon key={icon.id} name={icon.name} src={icon.src} />;
+            } else {
+              return "";
+            }
+          })}
+        </Box>
+        <Box
+          sx={{ diplay: "flex", flexDirection: "column", alignItems: "center" }}
+        >
+          {icons.map((icon, i) => {
+            if (i >= 8 && i < 10) {
+              return <Icon key={icon.id} name={icon.name} src={icon.src} />;
+            } else {
+              return "";
+            }
+          })}
+        </Box>
+        <Box
+          sx={{ diplay: "flex", flexDirection: "column", alignItems: "center" }}
+        >
+          {icons.map((icon, i) => {
+            if (i >= 10) {
+              return <Icon key={icon.id} name={icon.name} src={icon.src} />;
+            } else {
+              return "";
+            }
+          })}
+        </Box>
+      </StackBox>
+    </CustomBox>
+  );
+};
 
 export default Stack;

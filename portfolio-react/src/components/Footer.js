@@ -91,7 +91,6 @@ const Footer = () => {
             LinkedIn
           </Typography>
         </Box>
-
       </Box>
     </Box>
   );
