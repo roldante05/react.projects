@@ -14,7 +14,7 @@ export const estudies = [
         nombre: "Desarrollo  Web Full Stack",
         fecha:"Julio - Diciembre 2022",
         link: "http://www.pescar.org.ar",
-        imagen: "../media/pescar.png"
+        imagen: "https://raw.githubusercontent.com/roldante05/react.projects/main/portfolio-react/src/media/pescar.png"
     },
     
 ];
